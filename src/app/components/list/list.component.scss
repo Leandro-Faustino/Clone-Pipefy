@@ -1,0 +1,42 @@
+.container {
+  width:250px;
+  padding: 0 15px;
+  height: 100%;
+  flex: 0 0 320px;
+
+
+  & + mat-list {
+    border-right:1px solid rgba(0,0,0,0.05);
+  }
+
+   }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+
+   h2 {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 10px;
+   }
+
+    button {
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      border: 0;
+  }
+
+   }
+
+
+
+
+
+
+
+
+

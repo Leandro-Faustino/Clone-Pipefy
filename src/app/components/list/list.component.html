@@ -1,0 +1,19 @@
+
+<div class="container" >
+  <header>
+   <h2>{{list.title}}</h2>
+   <button mat-mini-fab color="primary" *ngIf="list.creatable === true">
+      <mat-icon>add</mat-icon>
+    </button>
+  </header>
+  <mat-list
+cdkDropList
+[cdkDropListData]="list.cards"
+(cdkDropListDropped)="drop($event)"
+
+  >
+    <app-card [cards]="cartao"  *ngFor="let cartao of list.cards" cdkDrag
+    >{{cartao}}</app-card>
+  </mat-list>
+</div>
+

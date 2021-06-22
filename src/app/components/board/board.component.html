@@ -1,0 +1,7 @@
+<div class="container" cdkDropListGroup >
+<app-list [list]="board" *ngFor="let board of lista"
+cdkDropList
+[cdkDropListData]="lista.title"
+(cdkDropListDropped)="drop($event)"
+>{{board}}</app-list>
+</div>

@@ -1,0 +1,9 @@
+<mat-card>
+  <header>
+     <app-label [label]="label" *ngFor="let label of cards.labels" ></app-label>
+  </header>
+  <p>
+      {{cards.content}}
+  </p>
+    <img mat-card-image src="{{cards.user}} " *ngIf="cards.user">
+</mat-card>
